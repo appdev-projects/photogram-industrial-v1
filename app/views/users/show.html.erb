@@ -1,0 +1,7 @@
+<%= render "shared/nav_for_profile.html.erb"%>
+
+<h2>Own Photos</h2>
+
+<%@user.own_photos.each do |photo|%>
+  <%=render "photos/photo", photo: photo%>
+<%end%>
